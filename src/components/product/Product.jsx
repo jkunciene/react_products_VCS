@@ -1,13 +1,13 @@
-import './Product.css'
+import './Product.css';
+import data from '../../data/data';
 
-const Product = (props) => {
-    console.log(props);
-    const items = props.products;
+const Product = () => {
+    console.log(data);
 
   return (
     <div className='list_of_products'>
         {
-            items.map((item, index)=>(
+            data.map((item, index)=>(
                 <div key={index} className="one_product_card">
                     <h4>{item.name}</h4>
                     <img src={item.imageUrl} alt="prekes nuotrauka" />

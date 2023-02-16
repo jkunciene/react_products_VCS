@@ -3,7 +3,9 @@ img{
 }
 .list_of_products{
     display: flex;
+   
 }
 .one_product_card{
+    width: 300px;
     border: 1px solid rgb(73, 59, 59);
 }
