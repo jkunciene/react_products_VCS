@@ -1,7 +1,7 @@
 import './Product.css'
 
 const Product = (props) => {
-    console.log(props.products);
+    console.log(props);
     const items = props.products;
 
   return (
@@ -12,7 +12,9 @@ const Product = (props) => {
                     <h4>{item.name}</h4>
                     <img src={item.imageUrl} alt="prekes nuotrauka" />
                     {/* //ideti produkto aprasyma */}
+                    <p>{item.description}</p>
                     {/* ideti produkto kaina */}
+                    <p>price: {item.price} $</p>
                     {/* stilizuoti vienos prekes kortele */}
                     {/* stilizuoti sarasa */}
                 </div>
