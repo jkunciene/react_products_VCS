@@ -1,8 +1,9 @@
 import './Product.css';
 import data from '../../data/data';
 
-const Product = () => {
-    console.log(data);
+
+const Product = ({addToCart}) => {
+  
 
   return (
     <div className='list_of_products'>
@@ -15,8 +16,9 @@ const Product = () => {
                     <p>{item.description}</p>
                     {/* ideti produkto kaina */}
                     <p>price: {item.price} $</p>
-                    {/* stilizuoti vienos prekes kortele */}
-                    {/* stilizuoti sarasa */}
+                   
+
+                    <button onClick={()=>addToCart(item)}>Pirkti</button>
                 </div>
             ))
         }
